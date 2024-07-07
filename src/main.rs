@@ -177,9 +177,9 @@ fn parse_parameters(parameters: &Vec<Parameter>) -> Vec<(String, String)> {
 }
 
 fn simple_tab(params: Vec<(String, String)>) -> String {
-    fn find(params: &Vec<(String, String)>, thing: &str) -> String {
+    /*fn find(params: &Vec<(String, String)>, thing: &str) -> String {
         params.iter().find(|p| p.0 == thing).unwrap_or(&(String::new(), String::new())).1.clone()
-    }
+    }*/
     let mut s = String::new();
     //let url: String = find(&params, "url");
     for mut p in params {

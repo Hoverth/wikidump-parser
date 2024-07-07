@@ -6,8 +6,18 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bzip2 = "0.4.4"
-html-escape = "0.2.13"
-pandoc = "0.8.11"
-parse_wiki_text = "0.1.5"
-quick-xml = "0.34.0"
+bzip2 = { path = "bzip2-rs", version = "0.4.4" }
+html-escape = { path = "html-escape", version = "0.2.13" }
+quick-xml = { path = "quick-xml", version = "0.35.0" }
+parse_wiki_text = { path = "parse_wiki_text" }
+
+[workspace]
+members = [
+  "parse_wiki_text",
+  "quick-xml",
+  "memchr",
+  "bzip2-rs",
+  "html-escape",
+  "utf8-width",
+  "libc"
+]

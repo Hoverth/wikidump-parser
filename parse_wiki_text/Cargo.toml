@@ -1,0 +1,6 @@
+[package]
+edition = "2021"
+name = "parse_wiki_text"
+version = "0.1.6"
+authors = ["Fredrik Portström <https://portstrom.com>"]
+description = "Parse wiki text from Mediawiki into a tree of elements"

@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["parse_wiki_text"];
